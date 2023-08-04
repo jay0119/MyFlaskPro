@@ -26,8 +26,9 @@ def calculate():
         addResult =f"Division of {num1} / {num2} is {result}"
     else:
         addResult =f"{operation} is either not arithmatic or its not supported."
+    
     return render_template('results.html',result = addResult)
 
 
-if __name__ == "_main_":
+if __name__ == "__main__":
   app.run(host="0.0.0.0")
